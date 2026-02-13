@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626dfa43a4a79c2418c4adb20d14a8b9, type: 3}
+  m_Name: _20260213
+  m_EditorClassIdentifier: 
+  isEditMode: 1
+  summary: "\n2026.02.13 \uC791\uC5C5 \uBAA9\uD45C\n- \uB9F5 \uAE30\uD68D\n- \uB2E8\uC21C
+    \uB3C4\uD615\uC73C\uB85C \uD540\uBCFC \uB9F5\uC744 \uAE30\uD68D\uD55C\uB2E4."
+  progress: 0
+  tasks:
+  - taskName: "\uB2E8\uC21C \uB9F5 \uAE30\uD68D"
+    isDone: 0
+  - taskName: "\uD50C\uB808\uC774\uC5B4 \uAD6C\uD604"
+    isDone: 0
+  - taskName: "\uC801 \uC624\uBE0C\uC81D\uD2B8 \uAD6C\uD604"
+    isDone: 0
+  - taskName: "\uC0C1\uC810 \uAD6C\uD604"
+    isDone: 0
+  - taskName: "\uC5D0\uC14B \uC791\uC5C5"
+    isDone: 0
