@@ -1,3 +1,4 @@
+using UnityEngine.UI;
 using UnityEngine;
 
 public enum ItemType
@@ -13,6 +14,7 @@ public class ItemData : ScriptableObject
 {
     public int itemCode;
     public GameObject item;
+    public Sprite itemIcon;
     public string itemName;
     public int itemCount;
     public ItemType type;

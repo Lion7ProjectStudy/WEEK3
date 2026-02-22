@@ -28,6 +28,7 @@ public class Item : MonoBehaviour
             );
             if((int)transform.position.x == (int)target.transform.position.x && (int)transform.position.y == (int)target.transform.position.y)
             {
+                SoundManager.Instance.PlaySFX(SoundManager.Instance.getItem);
                 Debug.Log("파괴단계진입");
                 GameManager.Instance.GetItem(data);
                 Destroy(gameObject);

@@ -25,12 +25,15 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.eDamanged);
         currentHp -= damage;
         if(currentHp<=0) Die();
     }
 
     void Die()
     {
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.die);
+        TimeScaleManager.Instance.SlowDown(0.2f, 1f);
         // 1. 파괴 이펙트 생성
         if (destroyEf != null)
         {

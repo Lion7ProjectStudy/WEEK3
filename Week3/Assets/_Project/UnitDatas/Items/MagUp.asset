@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6af8984ad5a16dd49a5f54e00c30344d, type: 3}
   m_Name: MagUp
   m_EditorClassIdentifier: 
-  itemCode: Mag01
+  itemCode: 0
   item: {fileID: 38496572421821223, guid: a9d632c6087c9c8428bb6bee7ec272eb, type: 3}
+  itemIcon: {fileID: 21300000, guid: 520a4db34ad3be0448d796007f3e67d8, type: 3}
   itemName: MagUp
   itemCount: 1
   type: 3

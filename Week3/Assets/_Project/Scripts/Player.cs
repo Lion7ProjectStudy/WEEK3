@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
 
     // 조작
     bool isJumpPressed = false;
-    float timer = 0;
+    float holeTimer = 0;
+    float homeTimer = 0;
     float timerInterval = 1;
 
     [Header("파괴 이펙트")]
@@ -69,6 +70,7 @@ public class Player : MonoBehaviour
     {
         if(jumpCount > 0)
         {
+            SoundManager.Instance.PlaySFX(SoundManager.Instance.jump);
             rd.AddForce(Vector2.up * power, ForceMode2D.Impulse);
             jumpCount --;
             Debug.Log($"잔여 점프 횟수 {jumpCount}");
@@ -89,6 +91,7 @@ public class Player : MonoBehaviour
 
     public void JumpCountRst()
     {   
+        SoundManager.Instance.PlaySFX(SoundManager.Instance.land);
         jumpCount = maxJumpCount;
         Debug.Log("점프 횟수 초기화");
     }
@@ -117,28 +120,37 @@ public class Player : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hole"))
         {
-            timer += Time.deltaTime;
-            Debug.Log(timer);
-            if(timer >= timerInterval)
+            holeTimer += Time.deltaTime;
+            if(holeTimer >= timerInterval)
             {
-                timer = 0;
+                holeTimer = 0;
                 Destroy(gameObject);
                 GameObject ef = Instantiate(destroyEf, transform.position, Quaternion.identity);
                 Destroy(ef, 1f);
 
+                SoundManager.Instance.PlaySFX(SoundManager.Instance.die);
                 GameManager.Instance.EnterHole();
             }
         }
 
         if(collision.gameObject.CompareTag("Home"))
         {
-            timer += Time.deltaTime;
-            Debug.Log(timer);
-            if(timer >= timerInterval)
+            homeTimer += Time.deltaTime;
+            Debug.Log(homeTimer);
+            if(homeTimer >= timerInterval)
             {
-                timer = 0;
+                homeTimer = 0;
                 GameManager.Instance.EnterHome();
             }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Hole") || collision.gameObject.CompareTag("Home"))
+        {
+            holeTimer = 0;
+            homeTimer = 0;
         }
     }
 

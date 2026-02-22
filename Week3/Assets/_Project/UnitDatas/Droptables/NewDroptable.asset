@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   droptable:
   - itemData: {fileID: 11400000, guid: 8c319d43b2d45964f948445f36270dd7, type: 2}
-    rate: 0
-    probability: 0
+    rate: 40
+    probability: 40
   - itemData: {fileID: 11400000, guid: 9eef3830f8a17fe499f3f7cb1d3909b9, type: 2}
-    rate: 100
-    probability: 100
+    rate: 20
+    probability: 20
+  - itemData: {fileID: 11400000, guid: 973ac5acf1acf214ca580f03b6216bc6, type: 2}
+    rate: 20
+    probability: 20
   - itemData: {fileID: 0}
-    rate: 0
-    probability: 0
+    rate: 20
+    probability: 20
