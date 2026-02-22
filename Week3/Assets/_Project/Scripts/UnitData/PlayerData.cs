@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class PlayerData : MonoBehaviour
+[CreateAssetMenu(fileName = "NewPlayer", menuName = "Unit/Player", order = 1)]
+public class PlayerData : ScriptableObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float level; 
+    public float power;
+    public float spd;
+    public int maxJumpCount;
 }

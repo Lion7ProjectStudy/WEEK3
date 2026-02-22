@@ -5,10 +5,12 @@
   <Project Path="NaughtyAttributes.Editor.csproj" />
   <Project Path="MoreMountains.Tools.Editor.csproj" />
   <Project Path="Lofelt.NiceVibrations.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="AllIn1SpriteShaderAssembly.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Lofelt.NiceVibrations.Demo.csproj" />
   <Project Path="Lofelt.NiceVibrations.Editor.csproj" />
+  <Project Path="CodeStage.PackageToFolder.Editor.csproj" />
+  <Project Path="CodeStage.PackageToFolder.Editor.Tests.csproj" />
   <Project Path="Plugins.BackgroundRecompiler.Editor.csproj" />
 </Solution>

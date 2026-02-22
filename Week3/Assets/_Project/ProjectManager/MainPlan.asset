@@ -20,14 +20,14 @@ MonoBehaviour:
     Point\uAC00 \uC544\uB2CC Hole\uC5D0 \uBE60\uC9C0\uBA74 \uBAA8\uB4E0 \uC81C\uD654\uB97C
     \uC783\uB294\uB2E4.\n- \uD50C\uB808\uC774\uC5B4\uAC00 \uC800\uCD95\uD55C \uC7AC\uD654\uB85C
     \uD50C\uB808\uC774\uC5B4\uB97C \uAC15\uD654\uD560 \uC218 \uC788\uB2E4."
-  progress: 0.2
+  progress: 0.6
   tasks:
   - taskName: "\uB2E8\uC21C \uB9F5 \uAE30\uD68D"
     isDone: 1
   - taskName: "\uD50C\uB808\uC774\uC5B4 \uAD6C\uD604"
-    isDone: 0
+    isDone: 1
   - taskName: "\uC801 \uC624\uBE0C\uC81D\uD2B8 \uAD6C\uD604"
-    isDone: 0
+    isDone: 1
   - taskName: "\uC0C1\uC810 \uAD6C\uD604"
     isDone: 0
   - taskName: "\uC5D0\uC14B \uC791\uC5C5"

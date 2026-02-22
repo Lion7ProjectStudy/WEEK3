@@ -34,4 +34,32 @@ public class Droptable : ScriptableObject
                 data.probability = 0;
         }
     }
+
+    // [추가된 핵심 기능] 가중치에 따라 아이템 하나를 반환하는 함수
+    public ItemData PickItem()
+    {
+        if (droptable == null || droptable.Count == 0) return null;
+
+        // 1. 전체 가중치 합 계산 (매번 계산하여 안전성 확보)
+        float totalRate = 0;
+        foreach (var data in droptable)
+        {
+            totalRate += data.rate;
+        }
+
+        // 2. 랜덤 값 뽑기
+        float randomValue = Random.Range(0, totalRate);
+
+        // 3. 가중치 추첨 알고리즘
+        foreach (var data in droptable)
+        {
+            if (randomValue <= data.rate)
+            {
+                return data.itemData; // 당첨된 아이템 데이터 반환
+            }
+            randomValue -= data.rate;
+        }
+
+        return null;
+    }
 }

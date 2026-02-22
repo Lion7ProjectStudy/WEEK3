@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a42a4179e74325049b4134e3f497d875, type: 3}
+  m_Name: FolderColorSettings
+  m_EditorClassIdentifier: 
+  modifierKey: 8
+  folderRules:
+  - folderName: Script
+    folderColor: {r: 1, g: 0.65368533, b: 0.514151, a: 0}
+    fullPath: Assets/_Project/Scripts
+    icon: {fileID: 2800000, guid: ceea20c4b67107743b39e03101ae3995, type: 3}
+    applyToAllFolders: 0
+    applyColorToSubfolders: 0
+    applyIconToSubfolders: 0
+    materialColor: 0
+  - folderName: Project
+    folderColor: {r: 0.5896226, g: 1, b: 0.956873, a: 0}
+    fullPath: Assets/_Project
+    icon: {fileID: 2800000, guid: ceea20c4b67107743b39e03101ae3995, type: 3}
+    applyToAllFolders: 0
+    applyColorToSubfolders: 0
+    applyIconToSubfolders: 0
+    materialColor: 0

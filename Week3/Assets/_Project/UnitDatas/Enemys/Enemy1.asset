@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 7486742412738079361, guid: 62022155333b4c9409e70d6c445e1f78, type: 3}
   enemyName: Enemy1
-  enemyHp: 100
+  enemyHp: 10
   dropTable: {fileID: 11400000, guid: 8c74b7e8d594af14bb5aee84473abd9b, type: 2}
